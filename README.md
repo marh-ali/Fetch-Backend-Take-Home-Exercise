@@ -1,6 +1,7 @@
 # Receipt Processor
 
-A Flask-based web service that processes receipts and awards points based on specific rules. This service provides two endpoints:
+A Flask-based web service that processes receipts and awards points based on specific rules. This service provides two
+endpoints:
 
 - Process receipts and generate unique IDs
 - Calculate points for processed receipts based on defined rules
@@ -77,9 +78,14 @@ Points are awarded based on the following rules:
 2. 50 points if the total is a round dollar amount with no cents
 3. 25 points if the total is a multiple of 0.25
 4. 5 points for every two items on the receipt
-5. If the trimmed length of the item description is a multiple of 3, multiply the price by 0.2 and round up to the nearest integer
+5. If the trimmed length of the item description is a multiple of 3, multiply the price by 0.2 and round up to the
+   nearest integer
 6. 6 points if the day in the purchase date is odd
 7. 10 points if the time of purchase is between 2:00pm and 4:00pm
+
+## High-level Architectural Diagram
+
+![architecture_diagram](architecture_diagram.png)
 
 ## Project Structure
 
